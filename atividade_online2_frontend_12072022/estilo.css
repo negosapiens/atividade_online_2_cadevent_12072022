@@ -1,0 +1,65 @@
+.titulo{
+    color: rgba(255, 162, 0, 0.82);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto','Arial';
+    margin-top: 50px;
+}
+.corpo{
+    background-image:linear-gradient(to top, bisque, bisque);
+}
+.calendario, .cadastroPessoa{
+    text-align: center;
+    margin-top: 25px;
+    border: 5px;
+}
+.botao{
+    text-align: center;
+    margin-top: auto;
+}
+.lista{
+    text-align: center;
+    color: black!important;
+    font-size: 1rem;
+    font-family: 'Arial Black', 'Roboto';
+}
+    /* margin: auto;
+    margin-left: auto;
+    border-style: dashed;
+    border-color: black!important;
+    background-image:linear-gradient(to top, bisque, white);
+}*/
+/* List */
+ul {
+    counter-reset: index;  
+    padding: 0;
+    max-width: 300px;
+    text-align: center;
+}
+/* List element */
+li {
+    counter-increment: index; 
+    align-items: center!important;
+    display: flex;
+    padding: 12px 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+/* Element counter */
+li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Element separation */
+li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
